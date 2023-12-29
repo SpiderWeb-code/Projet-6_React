@@ -10,10 +10,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
-    font-size: 25px;
+    width: 300px;
+    max-width: 100%;
     color: rgb(201, 133, 8);
     border: 3px solid black;
+}
+
+#nav_header p{
+    font-size: 150%;
 }
 
 #p_accueil{

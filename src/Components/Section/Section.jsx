@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "../../Data/data.json"
+import Image from "../../Data/image-section.webp"
 import './Section.css';
 
 function Section(){
@@ -9,8 +9,8 @@ function Section(){
 
 //AFFICHAGE
 return(
-    <div>
-        <p>Hello World</p>
+    <div id="container-image">
+        <img src={Image} alt="photographie d'une crique" id="picture"></img>
     </div>
 )
 }

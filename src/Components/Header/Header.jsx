@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css"
-import Logo from "../../Data/logo.png"
+import Logo from "../../Data/logo.webp"
 
 function Header() {
   //STATE

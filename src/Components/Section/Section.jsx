@@ -1,4 +1,5 @@
 import React from "react";
+import Data from "../../Data/data.json"
 import './Section.css';
 
 function Section(){

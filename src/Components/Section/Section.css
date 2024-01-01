@@ -1,10 +1,32 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+
 #container-image{
-    width: 1240px;
+    display: flex;
+    margin-top: 10px;
+    width: 1256px;
     height: 223px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#title{
+    position: absolute;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 57px;
+    color: white;
 }
 
 #picture{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 25px;
 }

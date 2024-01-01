@@ -9,6 +9,7 @@ function Header() {
 
   //AFFICHAGE
   return (
+  <section>
     <div id="container_header">
       <img src={Logo} alt="Logo"></img>
       <nav id="nav_header">
@@ -16,6 +17,7 @@ function Header() {
         <p><strong>A Propos</strong></p>
       </nav>
     </div>
+  </section>
   );
 }
 

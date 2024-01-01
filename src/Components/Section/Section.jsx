@@ -9,9 +9,12 @@ function Section(){
 
 //AFFICHAGE
 return(
+    <section>
     <div id="container-image">
         <img src={Image} alt="photographie d'une crique" id="picture"></img>
+        <h1 id="title">Chez vous, partout et ailleurs</h1>
     </div>
+    </section>
 )
 }
 export default Section

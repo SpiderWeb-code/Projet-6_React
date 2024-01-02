@@ -11,7 +11,7 @@ function Header() {
   return (
   <section>
     <div id="container_header">
-      <img src={Logo} alt="Logo"></img>
+      <img src={Logo} alt="Logo" id="logo"></img>
       <nav id="nav_header">
         <p id="p_accueil"><strong>Accueil</strong></p>
         <p><strong>A Propos</strong></p>

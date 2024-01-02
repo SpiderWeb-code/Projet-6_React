@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './Components/Header/Header';
-import Section from './Components/Section/Section'
-import Data from './Data/data.json'
+import Section from './Components/Section/Section';
+import Footer from './Components/Footer/Footer';
+import Data from './Data/data.json';
 import Article from './Components/Articles/Articles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
       ))}
     </div>
     </section>
+    <Footer />
   </React.StrictMode>
 );
 

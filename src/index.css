@@ -4,6 +4,7 @@
 }
 .container-article{
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 40px;
     border-radius: 35px;
     display: grid;

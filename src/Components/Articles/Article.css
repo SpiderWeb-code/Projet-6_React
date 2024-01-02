@@ -3,10 +3,9 @@
     flex-direction: column;
     align-items: start;
     justify-content: end;
-    padding-left: 20px;
     max-width: 350px;
     width: 100%;
-    height: 360px;
+    height: 350px;
     border-radius: 15px;
     background-color: orange;
     cursor: pointer;
@@ -16,4 +15,5 @@ h2{
     color: white;
     font-weight: 300;
     margin-bottom: 20px;
+    margin-left: 20px;
 }

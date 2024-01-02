@@ -5,10 +5,10 @@
 .container-article{
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 40px;
+    padding: 47px;
     border-radius: 35px;
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     background-color: rgb(206, 206, 206);
-    gap: 40px;
+    gap: 48px;
 }

@@ -15,21 +15,21 @@ function Article (props){
       element: <>
       <Link to={'/HelloWorld'}>
         <article className="article">
-        <h2>{title}</h2>
+        {title}
         </article>
         </Link>
     </>
     },
     {
         path: '/HelloWorld',
-        element: <div>{}</div>
+        element: <div><PageArticle /></div>
       }
   ])
     //COMPORTEMENT
 
     //RENDER
     return (
-        <RouterProvider router={router}/>
-    )
+      <RouterProvider router={router}/>
+  )
 }
 export default Article

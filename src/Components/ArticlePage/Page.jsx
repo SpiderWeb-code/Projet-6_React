@@ -4,6 +4,7 @@ import image from "../../Data/image-section-page-accueil.webp"
 import Data from '../../Data/data.json';
 function PageArticle(){
     //STATE
+    //useEfect = permet de modifier le DOM
     useEffect(() =>{
         //Liens de la page "/HelloWorld"
         const way = window.location.pathname;
@@ -29,11 +30,9 @@ function PageArticle(){
             sectionPicture.style.height="400px";
             picture.setAttribute("src", image);
             // VA ETRE UTILISER POUR RECUPERER LE NOM DANS LA SECTION
-            sectionText.style.fontSize="30px"
             sectionText.style.color="red";
             sectionText.style.display="flex";
             sectionText.style.justifyContent="center";
-            //TRAVAIL
             // Création des elements"
             const container = document.createElement("div")
             container.style.display="flex";
@@ -43,14 +42,32 @@ function PageArticle(){
             container.style.width="100%";
             container.style.height="300px";
             const appartementElement = document.createElement("div");
-            appartementElement.innerHTML = `<p>${title[0]}</p>`;
+            appartementElement.innerHTML = `<p id="titre">${title[0]}</p>`;
+            appartementElement.style.fontSize="40px";
             const whereElement = document.createElement("div");
-            whereElement.innerHTML = `<p>${location[0]}</p>`;
-
+            whereElement.innerHTML = `<p id="localisation">${location[0]}</p>`;
+            whereElement.style.fontSize="20px"
+            const containerButton = document.createElement("div");
+            containerButton.style.display="flex";
+            containerButton.style.gap="10px";
+            const buttonCozy = document.createElement("button");
+            const buttonCanal= document.createElement("button");
+            const buttonParis = document.createElement("button");
+            buttonCozy.innerHTML ="Cozy";
+            buttonCanal.innerHTML="Canal";
+            buttonParis.innerHTML="Paris 10";
+            //AJOUT D'UNE CLASS CSS AUX 3 BOUTONS
+            buttonCozy.setAttribute("class", "three-buttons");
+            buttonCanal.setAttribute("class", "three-buttons");
+            buttonParis.setAttribute("class", "three-buttons");
             // RELIAGE
             sectionText.appendChild(container);
             container.appendChild(appartementElement);
             container.appendChild(whereElement);
+            container.appendChild(containerButton);
+            containerButton.appendChild(buttonCozy);
+            containerButton.appendChild(buttonCanal);
+            containerButton.appendChild(buttonParis);
         }
     },[]); 
 }

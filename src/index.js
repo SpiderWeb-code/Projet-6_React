@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './Components/Header/Header';
-import Section from './Components/Section/Section';
-import Footer from './Components/Footer/Footer';
-import Data from './Data/data.json';
-import Article from './Components/Articles/Articles';
+import Logo from './Components/Page-Accueil/Header/logo';
+import Nav from './Components/Page-Accueil/Header/navigation';
+import SectionImage from './Components/Page-Accueil/Main/section-image';
+
 
 //STATE
 
@@ -15,16 +14,11 @@ import Article from './Components/Articles/Articles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header/>
-    <Section />
-    <section id="container-container-article">
-    <div className='container-article'>
-      {Data.map(({title, id}) => (
-        <Article key={id} title={title} />
-      ))}
-    </div>
-    </section>
-    <Footer />
+    <header>
+    <Logo />
+    <Nav />
+    </header>
+    <SectionImage />
   </React.StrictMode>
 );
 

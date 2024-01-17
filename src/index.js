@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Data from '../src/Data/data.json'
 import Logo from './Components/Page-Accueil/Header/logo';
 import Nav from './Components/Page-Accueil/Header/navigation';
 import SectionImage from './Components/Page-Accueil/Main/section-image';
+import Article from "../src/Components/Page-Accueil/Main/article";
 
 
 //STATE
@@ -19,6 +21,11 @@ root.render(
     <Nav />
     </header>
     <SectionImage />
+    <section className='container-article'>
+      {Data.map(({title, id, cover}) => (
+        <Article key={id} title={title} cover={cover}/>
+      ))}
+    </section>
   </React.StrictMode>
 );
 

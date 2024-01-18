@@ -8,7 +8,7 @@ const logoAlt = "logo de la page Kasa"
 //RENDER
 return(
     <div>
-        <img src={logo} alt={logoAlt}></img>
+        <img src={logo} alt={logoAlt} style={{minWidth:"100px", width:"100%"}}></img>
     </div>
 )
 }

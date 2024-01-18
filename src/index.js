@@ -6,7 +6,7 @@ import Logo from './Components/Page-Accueil/Header/logo';
 import Nav from './Components/Page-Accueil/Header/navigation';
 import SectionImage from './Components/Page-Accueil/Main/section-image';
 import Article from "../src/Components/Page-Accueil/Main/article";
-
+import Footer from '../src/Components/Page-Accueil/Footer/footer';
 
 //STATE
 
@@ -26,6 +26,7 @@ root.render(
         <Article key={id} title={title} cover={cover}/>
       ))}
     </section>
+    <Footer />
   </React.StrictMode>
 );
 

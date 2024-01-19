@@ -1,0 +1,15 @@
+#navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+    width:400px;
+    padding: 0px 20px 0px 20px;
+}
+#p-navigation{
+    text-decoration: underline
+}
+.nav-link{
+    font-size: 150%;
+    font-weight: 100;
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import FooterImage from "../../../Data/Footer.webp";
-function Footer(){
+import FooterImage from "../Data/Footer.webp";
+function Banner(){
     return(
     <div>
-        <img style={{width:"100%"}} src={FooterImage} alt="bas de page avec dessus le logo du site de Kasa"></img>
+        <img id="banner" src={FooterImage} alt="bas de page avec dessus le logo du site de Kasa"></img>
     </div>
     )
 }
-export default Footer
+export default Banner

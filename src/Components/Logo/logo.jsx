@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../Data/logo.webp"
+import logo from "../Data/logo.webp"
 function Logo(){
 //STATE
 const logoAlt = "logo de la page Kasa"
@@ -8,7 +8,7 @@ const logoAlt = "logo de la page Kasa"
 //RENDER
 return(
     <div>
-        <img src={logo} alt={logoAlt} style={{minWidth:"100px", width:"100%"}}></img>
+        <img id="logo" src={logo} alt={logoAlt}></img>
     </div>
 )
 }

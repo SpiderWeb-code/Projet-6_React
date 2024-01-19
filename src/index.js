@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Rooter from './rooter';
 import './index.css';
 import Data from '../src/Data/data.json'
 import Logo from './Components/Page-Accueil/Header/logo';
 import Nav from './Components/Page-Accueil/Header/navigation';
 import SectionImage from './Components/Page-Accueil/Main/section-image';
-import Article from "../src/Components/Page-Accueil/Main/article";
 import Footer from '../src/Components/Page-Accueil/Footer/footer';
+import Article from './Components/Page-Accueil/Main/article';
 
 //STATE
 
@@ -16,6 +17,7 @@ import Footer from '../src/Components/Page-Accueil/Footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Rooter />
     <header>
     <Logo />
     <Nav />
@@ -23,6 +25,7 @@ root.render(
     <SectionImage />
     <section className='container-article'>
       {Data.map(({title, id, cover}) => (
+      //<Article key={id} title={title} cover={cover}/>
         <Article key={id} title={title} cover={cover}/>
       ))}
     </section>

@@ -30,7 +30,19 @@ const router = createBrowserRouter([
     },
     {
         path: '/helloworld',
-        element: <div>Hello World</div>
+        element: <>
+        <header>
+          <Logo />
+          <Nav />
+        </header>
+        <section>
+        {Data.length > 0 && (
+        //Récupéres les premiers éléments de mon tableau Data
+        <Article key={Data[0].id} title={Data[0].title} cover={Data[0].cover}/>
+        )}
+        </section>
+        <Footer />
+        </>
     }
 ])
 

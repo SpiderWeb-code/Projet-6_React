@@ -1,5 +1,6 @@
 import React from "react";
 import FooterImage from "../Data/Footer.webp";
+import "../Banner/banner.css";
 function Banner(){
     return(
     <div>

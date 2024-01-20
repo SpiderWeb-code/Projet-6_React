@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../Navigation/navigation.css";
 function Nav(){
 //STATE
 

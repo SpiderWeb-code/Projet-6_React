@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSection from "../../../Data/image-section.webp";
+import ImageSection from "../Data/image-section.webp";
 function SectionImage(){
 //STATE
 const altImageSection = "Image de rocher en bord de mer"

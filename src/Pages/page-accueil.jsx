@@ -5,20 +5,25 @@ import Article from "../Components/Article/article";
 import Logo from "../Components/Logo/logo";
 import Nav from "../Components/Navigation/navigation";
 import Data from "../Components/Data/data.json";
+import SectionImage from "../Components/SectionImage/section-image";
+import "../index.css";
 
 function Home() {
   return (
     <section>
       <div id="main">
+        <header>
         <Logo />
         <Nav />
-        <Link to={"/helloworld"}>
+        </header>
+        <SectionImage />
           <section className='container-article'>
             {Data.map(({ title, id, cover }) => (
-              <Article key={id} title={title} cover={cover} />
+              <Link to={"/helloworld"}>
+              <Article key={id} title={title} cover={cover}/>
+              </Link>
             ))}
           </section>
-        </Link>
         <Banner />
       </div>
     </section>

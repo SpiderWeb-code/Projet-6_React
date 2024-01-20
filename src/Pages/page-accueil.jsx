@@ -10,8 +10,7 @@ import "../index.css";
 
 function Home() {
   return (
-    <section>
-      <div id="main">
+    <main>
         <header>
         <Logo />
         <Nav />
@@ -19,14 +18,13 @@ function Home() {
         <SectionImage />
           <section className='container-article'>
             {Data.map(({ title, id, cover }) => (
-              <Link to={"/helloworld"}>
+              <Link to={"/article"}>
               <Article key={id} title={title} cover={cover}/>
               </Link>
             ))}
           </section>
         <Banner />
-      </div>
-    </section>
+    </main>
   );
 }
 

@@ -3,16 +3,6 @@ header{
     justify-content: space-between;
     margin: 30px 100px 0px 100px;
 }
-.container-article{
-    display:flex;
-    flex-wrap:wrap;
-    margin:20px 100px 0px 100px;
-    justify-content:center;
-    background-color:rgb(248, 248, 248);
-    border-radius:25px;
-    gap: 30px;
-    padding: 5%;
-}
 
 @media (max-width:425px){
     #root{

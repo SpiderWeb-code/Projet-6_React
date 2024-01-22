@@ -1,5 +1,4 @@
 import React from "react";
-import "../Article/article.css";
     function Article (props){
         //STATE
         

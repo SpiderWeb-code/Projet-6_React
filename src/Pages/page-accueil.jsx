@@ -11,7 +11,7 @@ import "../index.css";
 function Home() {
   return (
     <main>
-        <header>
+        <header id="header-page-accueil">
         <Logo />
         <Nav />
         </header>

@@ -15,22 +15,17 @@ function ArticlePage() {
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter(props => props.id === paramsId);
 
-  // Si filtereData ne trouve rien, alors styleArticle = false. Si oui, styleArticle = true.
-  const styleArticle = filteredData.length > 0;
-  let resultat = styleArticle
-  let element = document.getElementById("image-article")
-  resultat === true ?  console.log("Hello World") : console.log("GoodNight World");
-  console.log(styleArticle)
+ 
   return (
     <main>
-      <header>
+      <header id="header">
         <Logo />
         <Nav />
       </header>
       <div className='container-article-2'>
       {/* Afficher les articles filtrés */}
-      {filteredData.map(({ id, title, cover }) => (
-        <Article key={id} title={title} cover={cover} />
+      {filteredData.map(({ id, title, cover, location, host }) => (
+        <Article key={id} title={title} cover={cover} location={location} name={host.name} picture={host.picture} />
       ))}
       </div>
       <Banner />

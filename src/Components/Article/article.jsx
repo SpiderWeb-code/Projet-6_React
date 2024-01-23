@@ -7,17 +7,8 @@ import React from "react";
         //RENDER
         return(
             <article className="article">
-            <div id='info-container'>
-            <div id="first-container">
+            <img id="test" src={props.cover} alt="images-articles"></img>
             <h2>{props.title}</h2>
-            <p id="location">{props.location}</p>
-            </div>
-            <div id="second-container">
-            <p id="name">{props.name}</p>
-            <img src={props.picture} alt="photo_de_profil"></img>
-            </div>
-            </div>
-            <img src={props.cover} alt="images-articles"></img>
             </article>
         )
 };

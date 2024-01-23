@@ -1,0 +1,7 @@
+#second-container{
+    display: flex;
+}
+#second-container img{
+    border-radius: 50px;
+    color: none;
+}

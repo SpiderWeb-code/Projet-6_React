@@ -1,0 +1,13 @@
+#container-section-image{
+    padding:30px 100px 0px 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#container-section-image img{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius:25px;
+}

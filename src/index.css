@@ -10,6 +10,11 @@ header{
     flex-direction: column;
 }
 
+#section-container-article{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width:425px){
     #root{
         padding: 0px;

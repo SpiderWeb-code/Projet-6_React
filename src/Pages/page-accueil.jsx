@@ -18,7 +18,7 @@ function Home() {
         <SectionImage />
           <section className='container-article'>
             {Data.map(({ title, id, cover }) => (
-              <Link to={`/article/`+ id}>
+              <Link key={id} to={`/article/`+ id}>
               <Article key={id} title={title} cover={cover}/>
               </Link>
             ))}

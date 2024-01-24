@@ -31,3 +31,20 @@
     object-fit:cover;
     border-radius: 25px;
 }
+
+.container-article-2{
+    display: flex;
+    flex-direction: column;
+}
+.container-article-2 article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-article-2 #test{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 50px 120px 0px 100px;
+}

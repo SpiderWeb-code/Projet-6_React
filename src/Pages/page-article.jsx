@@ -15,7 +15,6 @@ function ArticlePage() {
   
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter(props => props.id === paramsId);
-
  
   return (
     <main id="main_page-article">
@@ -25,12 +24,14 @@ function ArticlePage() {
       </header>
       <div className='container-article-2'>
       {/* Afficher les articles filtrés */}
-      {filteredData.map(({ id, title, cover, location, host }) => (
-        <>
-        <Article key={id} cover={cover} />
-        <Profil key={id} name={host.name} picture={host.picture}/>
-        <Localisation key={id} title={title} location={location} />
-        </>
+      {filteredData.map(({id, title, cover, location, host }) => (
+        <React.Fragment key={id}>
+        <Article cover={cover} />
+        <section id="section-container-article">
+        <Localisation title={title} location={location} />
+        <Profil name={host.name} picture={host.picture}/>
+        </section>
+        </React.Fragment>
       ))}
       </div>
       <Banner />

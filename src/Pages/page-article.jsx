@@ -24,11 +24,11 @@ function ArticlePage() {
       </header>
       <div className='container-article-2'>
       {/* Afficher les articles filtrés */}
-      {filteredData.map(({id, title, cover, location, host }) => (
+      {filteredData.map(({id, title, cover, location, host, tags }) => (
         <React.Fragment key={id}>
         <Article cover={cover} />
         <section id="section-container-article">
-        <Localisation title={title} location={location} />
+        <Localisation title={title} location={location} tags={tags}/>
         <Profil name={host.name} picture={host.picture}/>
         </section>
         </React.Fragment>

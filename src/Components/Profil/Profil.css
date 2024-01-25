@@ -1,16 +1,16 @@
-#second-container{
+#profil{
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     gap: 15px;
 }
-#second-container img{
+#profil img{
     border-radius: 190px;
     color: none;
 }
 
-#second-container p{
+#profil p{
     font-size: 20px;
     color: red;
 }

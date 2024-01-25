@@ -1,0 +1,10 @@
+#container-rating div{
+    list-style: none;
+    display: flex;
+}
+.starOn{
+    color: red;
+}
+.starOff{
+    color: gray;
+}

@@ -8,6 +8,7 @@ import Data from "../Components/Data/data.json";
 import "../Components/Article/article.css";
 import Profil from '../Components/Profil/Profil';
 import Localisation from '../Components/Localisation/localisation';
+import Rating from '../Components/Rating/rating';
 
 function ArticlePage() {
   let params = useParams();
@@ -24,12 +25,15 @@ function ArticlePage() {
       </header>
       <div className='container-article-2'>
       {/* Afficher les articles filtrés */}
-      {filteredData.map(({id, title, cover, location, host, tags }) => (
+      {filteredData.map(({id, title, cover, location, host, tags, rating }) => (
         <React.Fragment key={id}>
         <Article cover={cover} />
-        <section id="section-container-article">
+        <section id="second-container">
         <Localisation title={title} location={location} tags={tags}/>
+        <div id='container-profil'>
         <Profil name={host.name} picture={host.picture}/>
+        <Rating rating={rating}/>
+        </div>
         </section>
         </React.Fragment>
       ))}

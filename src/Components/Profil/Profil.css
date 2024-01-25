@@ -1,7 +1,16 @@
 #second-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    gap: 15px;
 }
 #second-container img{
-    border-radius: 50px;
+    border-radius: 190px;
     color: none;
+}
+
+#second-container p{
+    font-size: 20px;
+    color: red;
 }

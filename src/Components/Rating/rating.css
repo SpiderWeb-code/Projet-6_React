@@ -1,10 +1,15 @@
-#container-rating div{
+#container-rating{
     list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 .starOn{
     color: red;
+    width: 20px;
 }
 .starOff{
     color: gray;
+    width: 20px;
 }

@@ -17,18 +17,22 @@
     width: 20px;
 }
 
-.text-label{
+.active{
     width: 530px;
     height: 200px;
     background-color: rgb(231, 231, 231);
     padding: 4px;
 }
 
-.text-label p{
+.active p{
     font-size: 18px;
 }
 
-.text-label ul{
+.active ul{
     list-style-type: none;
     padding-left: 10px;
+}
+
+.not-active{
+    display: none;
 }

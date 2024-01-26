@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Open label/open-label.css";
 import Arrow from "../Data/chevron-up-solid.svg";
 export const titleLabelDescription = <h3>Description</h3>;
 export const titleLabelEquipements = <h3>Description</h3>;
 
 function OpenLabel(props){
+    // isActive = false (désactivé)
+    const [isActive, setIsActive] = useState(false);
     const { label } = props;
     const { description } = props;
     const { equipements } = props;
-    console.log(equipements)
+
+    // isActive = true (activé)
+    function Activation (){
+        setIsActive(!isActive)
+    }
+
     return(
         <div id="container-description">
             <div className="ouverture-label">
                 {label}
-                <img src={Arrow} alt="fléche ouverture et fermeture de la div"></img>
+                <img src={Arrow} alt="fléche ouverture et fermeture de la div" onClick={Activation}></img>
             </div>
-            <div className="text-label">
+            {/* selon l'états de isActive (true ou false), alors cela changera la class de la div via son style css*/}
+            <div className={isActive ? 'active' : 'not-active'}>
             {description}
             {equipements}
             </div>

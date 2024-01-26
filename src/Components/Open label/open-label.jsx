@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Open label/open-label.css";
 import Arrow from "../Data/chevron-up-solid.svg";
 export const titleLabelDescription = <h3>Description</h3>;
-export const titleLabelEquipements = <h3>Équipement</h3>;
+export const titleLabelEquipements = <h3>Équipements</h3>;
 
 function OpenLabel(props){
     // isActive = false (désactivé)

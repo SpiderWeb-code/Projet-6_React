@@ -20,6 +20,12 @@ header{
     border: 1px solid red;
 }
 
+#container-labels{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 120px 0px 100px;
+}
+
 @media (max-width:425px){
     #root{
         padding: 0px;

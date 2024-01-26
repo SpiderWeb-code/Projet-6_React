@@ -9,6 +9,9 @@ import "../Components/Article/article.css";
 import Profil from '../Components/Profil/Profil';
 import Localisation from '../Components/Localisation/localisation';
 import Rating from '../Components/Rating/rating';
+import OpenLabel from '../Components/Open label/open-label';
+import {titleLabelDescription} from '../Components/Open label/open-label'
+import {titleLabelEquipements} from '../Components/Open label/open-label'
 
 function ArticlePage() {
   let params = useParams();
@@ -25,7 +28,7 @@ function ArticlePage() {
       </header>
       <div className='container-article-2'>
       {/* Afficher les articles filtrés */}
-      {filteredData.map(({id, title, cover, location, host, tags, rating }) => (
+      {filteredData.map(({id, title, cover, location, host, tags, rating, description, equipments}) => (
         <React.Fragment key={id}>
         <Article cover={cover} />
         <section id="second-container">
@@ -34,6 +37,10 @@ function ArticlePage() {
         <Profil name={host.name} picture={host.picture}/>
         <Rating rating={rating}/>
         </div>
+        </section>
+        <section id="container-labels">
+        <OpenLabel label={titleLabelDescription} description={description}/>
+        <OpenLabel label={titleLabelEquipements} equipements={equipments}/>
         </section>
         </React.Fragment>
       ))}

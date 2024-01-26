@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Open label/open-label.css";
 import Arrow from "../Data/chevron-up-solid.svg";
 export const titleLabelDescription = <h3>Description</h3>;
-export const titleLabelEquipements = <h3>Description</h3>;
+export const titleLabelEquipements = <h3>Équipement</h3>;
 
 function OpenLabel(props){
     // isActive = false (désactivé)
@@ -26,7 +26,7 @@ function OpenLabel(props){
             </div>
             {/* selon l'états de isActive (true ou false), alors cela changera la class de la div via son style css*/}
             <div className={isActive ? 'active' : 'not-active'}>
-            {description}
+            {description},
             {equipements}
             </div>
         </div>

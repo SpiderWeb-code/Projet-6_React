@@ -36,3 +36,12 @@
 .not-active{
     display: none;
 }
+
+.rotated {
+    transform: rotate(-180deg); /* Applique la rotation de 90 degrés à l'image quand la classe rotated est présente */
+    transition: transform 0.3s ease; /* Ajoute une transition à la propriété transform */
+}
+
+.no-rotated{
+    transition: transform 0.3s ease; /* Ajoute une transition à la propriété transform */
+  }

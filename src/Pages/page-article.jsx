@@ -40,7 +40,8 @@ function ArticlePage() {
         </section>
         <section id="container-labels">
         <OpenLabel label={titleLabelDescription} description={<p>{description}</p>}/>
-        <OpenLabel label={titleLabelEquipements} equipements={<ul><li>{equipments}</li></ul>} />
+        {/* Crée un tableau avec map, et affiche chaques item ("nos élements") dans un <li> et index (le numéros de l'élément suite a la génération du tableau) servira de clé pour que réact différencie les éléments*/}
+        <OpenLabel label={titleLabelEquipements} equipements={<ul>{equipments.map((item, index) => <li key={index}>{item}</li>)}</ul>}/>
         </section>
         </React.Fragment>
       ))}

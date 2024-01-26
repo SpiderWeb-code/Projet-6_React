@@ -12,7 +12,7 @@ function OpenLabel(props){
     return(
         <div id="container-description">
             <div className="ouverture-label">
-                <h3>{label}</h3>
+                {label}
                 <img src={Arrow} alt="fléche ouverture et fermeture de la div"></img>
             </div>
             <div className="text-label">

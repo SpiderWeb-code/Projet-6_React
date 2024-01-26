@@ -39,8 +39,8 @@ function ArticlePage() {
         </div>
         </section>
         <section id="container-labels">
-        <OpenLabel label={titleLabelDescription} description={description}/>
-        <OpenLabel label={titleLabelEquipements} equipements={equipments}/>
+        <OpenLabel label={titleLabelDescription} description={<p>{description}</p>}/>
+        <OpenLabel label={titleLabelEquipements} equipements={<ul><li>{equipments}</li></ul>} />
         </section>
         </React.Fragment>
       ))}

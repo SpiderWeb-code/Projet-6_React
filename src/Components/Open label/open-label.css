@@ -16,3 +16,20 @@
 .ouverture-label img{
     width: 20px;
 }
+
+.text-label{
+    width: 530px;
+    height: 200px;
+    background-color: rgb(231, 231, 231);
+    padding: 4px;
+}
+
+.text-label p{
+    font-size: 18px;
+}
+
+.text-label li{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}

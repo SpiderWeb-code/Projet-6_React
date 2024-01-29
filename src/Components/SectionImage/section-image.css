@@ -5,9 +5,25 @@
     align-items:center;
 }
 
+#container-section-image h1{
+    display:flex;
+    position:absolute;
+    font-size:50px;
+    color:white;
+    font-weight:300;
+    font-family:arial;
+}
+
 #container-section-image img{
     height: 250px;
     object-fit: cover;
     width: 100%;
     border-radius:25px;
+}
+
+#container-section-info{
+    margin-bottom: 30px;
+}
+#container-section-info h1{
+    display: none;
 }

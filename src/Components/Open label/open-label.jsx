@@ -3,6 +3,10 @@ import "../Open label/open-label.css";
 import Arrow from "../Data/chevron-up-solid.svg";
 export const titleLabelDescription = <h3>Description</h3>;
 export const titleLabelEquipements = <h3>Équipements</h3>;
+export const titleLabelFiabilite = <h3>Fiabilité</h3>;
+export const titleLabelRespect = <h3>Respect</h3>;
+export const titleLabelService = <h3>Service</h3>;
+export const titleLabelSecurite = <h3>Sécurité</h3>;
 
 function OpenLabel(props){
     // isActive = false (désactivé)

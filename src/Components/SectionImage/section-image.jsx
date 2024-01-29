@@ -1,16 +1,15 @@
 import React from "react";
-import ImageSection from "../Data/image-section.webp";
 import "../SectionImage/section-image.css";
-function SectionImage(){
+function SectionImage({image}){
 //STATE
-const altImageSection = "Image de rocher en bord de mer"
+const altImageSection = "Image de la section";
 //COMPORTEMENT
 
 //RENDER
 return(
     <div id={"container-section-image"}>
-        <h1 style={{display:"flex", position:"absolute", fontSize:"50px", color:"white", fontWeight:"300", fontFamily:"arial"}}>Chez vous, partout et ailleurs</h1>
-        <img src={ImageSection} alt={altImageSection}></img>
+        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={image} alt={altImageSection}></img>
     </div>
 )
 }

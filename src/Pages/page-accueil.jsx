@@ -6,6 +6,7 @@ import Logo from "../Components/Logo/logo";
 import Nav from "../Components/Navigation/navigation";
 import Data from "../Components/Data/data.json";
 import SectionImage from "../Components/SectionImage/section-image";
+import SectionImageAccueil from "../Components/Data/image-section.webp";
 import "../index.css";
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
         <Logo />
         <Nav />
         </header>
-        <SectionImage />
+        <SectionImage image={SectionImageAccueil}/>
           <section className='container-article'>
             {Data.map(({ title, id, cover }) => (
               <Link key={id} to={`/article/`+ id}>

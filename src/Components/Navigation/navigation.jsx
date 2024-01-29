@@ -13,7 +13,9 @@ return(
         <Link to={"/"} className="link-without-bar">
         <p id="p-navigation"><strong className="nav-link">Accueil</strong></p>
         </Link>
+        <Link to={"/information"} className="link-without-bar">
         <p><strong className="nav-link">A Propos</strong></p>
+        </Link>
     </div>
 )
 }

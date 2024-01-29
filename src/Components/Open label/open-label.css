@@ -61,3 +61,10 @@
 .no-rotated{
     transition: transform 0.3s ease; /* Ajoute une transition à la propriété transform */
   }
+
+#container-label-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}

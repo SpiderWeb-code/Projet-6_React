@@ -10,8 +10,8 @@ import Profil from '../Components/Profil/Profil';
 import Localisation from '../Components/Localisation/localisation';
 import Rating from '../Components/Rating/rating';
 import OpenLabel from '../Components/Open label/open-label';
-import {titleLabelDescription} from '../Components/Open label/open-label'
-import {titleLabelEquipements} from '../Components/Open label/open-label'
+import { titleLabelDescription } from '../Components/Open label/open-label';
+import { titleLabelEquipements } from '../Components/Open label/open-label';
 
 function ArticlePage() {
   let params = useParams();
@@ -19,7 +19,6 @@ function ArticlePage() {
   
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter(props => props.id === paramsId);
- 
   return (
     <main id="main_page-article">
       <header id="header">

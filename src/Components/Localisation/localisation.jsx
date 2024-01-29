@@ -8,8 +8,8 @@ function Localisation(props) {
     tag ? <button key={index} className={`button-${index + 1}`}>{tag}</button> : null
   ));
 
-  // lis = Créer un tableau de 4 <li> maximum pour nos 4 <button> en fonction du nombre dans index
-  const lis = Array.from({ length: 4 }, (_, index) => (
+  // lis = Créer un tableau de 5 <li> maximum pour nos 5 <button> en fonction du nombre dans index
+  const lis = Array.from({ length: 5 }, (_, index) => (
     // Ajoute comme clé son numéros d'index, ajoute la class "button-index" pour chaques <li>, Si props.tags n'a pas de index, Alors, il prend la class "hidden" qui le rend invisible
     <li key={index} className={`button-${index + 1} ${!props.tags[index] && "hidden"}`}></li>
   ));

@@ -2,7 +2,6 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    color: red;
     width:400px;
 }
 #p-navigation{
@@ -11,4 +10,8 @@
 .nav-link{
     font-size: 150%;
     font-weight: 100;
+    color: red;
+}
+.link-without-bar{
+    text-decoration: none;
 }

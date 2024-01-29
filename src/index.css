@@ -16,10 +16,6 @@ header{
     margin: 20px 120px 0px 100px;
 }
 
-#container-profil{
-    border: 1px solid red;
-}
-
 #container-labels{
     display: flex;
     justify-content: space-between;

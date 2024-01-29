@@ -26,7 +26,7 @@ function OpenLabel(props){
             </div>
             {/* selon l'états de isActive (true ou false), alors cela changera la class de la div via son style css*/}
             <div className={isActive ? 'active' : 'not-active'}>
-            {description},
+            {description}
             {equipements}
             </div>
         </div>

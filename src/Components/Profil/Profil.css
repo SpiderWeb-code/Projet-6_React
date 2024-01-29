@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     gap: 15px;
 }
 #profil img{

@@ -1,0 +1,18 @@
+#switch-buttons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 600px;
+    margin: 50px 120px 0px 100px;
+    width: 87%;
+}
+
+#switch-buttons img{
+    width: 70px;
+}
+.div-button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 600px;
+}

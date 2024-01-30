@@ -12,6 +12,7 @@ import Rating from '../Components/Rating/rating';
 import OpenLabel from '../Components/Open label/open-label';
 import { titleLabelDescription } from '../Components/Open label/open-label';
 import { titleLabelEquipements } from '../Components/Open label/open-label';
+import Switch from '../Components/Switch/switch';
 
 function ArticlePage() {
   let params = useParams();
@@ -29,6 +30,7 @@ function ArticlePage() {
       {/* Afficher les articles filtrés */}
       {filteredData.map(({id, title, cover, location, host, tags, rating, description, equipments}) => (
         <React.Fragment key={id}>
+        <Switch />
         <Article cover={cover} />
         <section id="second-container">
         <Localisation title={title} location={location} tags={tags}/>

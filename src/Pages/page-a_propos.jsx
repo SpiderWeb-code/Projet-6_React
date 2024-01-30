@@ -20,7 +20,7 @@ function ProposPage(){
       <section id="container-label-info">
       {filteredData.map(({id, titleInfo, info}) => (
         <React.Fragment key={id}>
-        <OpenLabel label={titleInfo} description={info}/>
+        <OpenLabel label={<h3>{titleInfo}</h3>} description={<p>{info}</p>}/>
         </React.Fragment>
         ))}
       </section>

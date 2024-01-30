@@ -68,3 +68,22 @@
     flex-direction: column;
     gap: 20px;
 }
+#container-label-info .ouverture-label{
+    max-width: none;
+    height: 50px;
+}
+
+#container-label-info h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container-label-info div{
+    height: 100%;
+    max-width: 1200px;
+    width: 100%;
+}
+#container-label-info p{
+    margin: 15px;
+}

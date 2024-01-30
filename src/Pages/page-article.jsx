@@ -10,26 +10,21 @@ import Profil from '../Components/Profil/Profil';
 import Localisation from '../Components/Localisation/localisation';
 import Rating from '../Components/Rating/rating';
 import OpenLabel from '../Components/Open label/open-label';
-import { titleLabelDescription } from '../Components/Open label/open-label';
-import { titleLabelEquipements } from '../Components/Open label/open-label';
+import { titleLabelDescription, titleLabelEquipements } from '../Components/Open label/open-label';
 import Switch from '../Components/Switch/switch';
 
 function ArticlePage() {
-  let params = useParams();
-  let paramsId = params.id;
+  const { id: paramsId } = useParams();
 
   // Filtrer les éléments dans le tableau Data
   const [coverIndex, setCoverIndex] = useState(0);
 
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter((props) => props.id === paramsId);
+  const pictures = filteredData[0]?.pictures || [];
 
-  const handleSwitchLeft = () => {
-    setCoverIndex((prevIndex) => (prevIndex - 1 + filteredData[0]?.pictures?.length) % filteredData[0]?.pictures?.length);
-  };
-
-  const handleSwitchRight = () => {
-    setCoverIndex((prevIndex) => (prevIndex + 1) % filteredData[0]?.pictures?.length);
+  const handleSwitch = (increment) => {
+    setCoverIndex((prevIndex) => (prevIndex + increment + pictures.length) % pictures.length);
   };
 
   return (
@@ -42,8 +37,8 @@ function ArticlePage() {
         {/* Afficher les articles filtrés */}
         {filteredData.map(({ id, title, cover: articleCover, location, host, tags, rating, description, equipments }) => (
           <React.Fragment key={id}>
-            <Switch onClickLeft={handleSwitchLeft} onClickRight={handleSwitchRight} />
-            <Article cover={filteredData[0]?.pictures?.[coverIndex] || articleCover || 'valeur_par_defaut_pour_cover'} />
+            <Switch onClickLeft={() => handleSwitch(-1)} onClickRight={() => handleSwitch(1)} />
+            <Article cover={pictures[coverIndex] || articleCover || 'valeur_par_defaut_pour_cover'} />
             <section id="second-container">
               <Localisation title={title} location={location} tags={tags} />
               <div id="container-profil">
@@ -53,16 +48,7 @@ function ArticlePage() {
             </section>
             <section id="container-labels">
               <OpenLabel label={titleLabelDescription} description={<p>{description}</p>} />
-              <OpenLabel
-                label={titleLabelEquipements}
-                equipements={
-                  <ul>
-                    {equipments.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                }
-              />
+              <OpenLabel label={titleLabelEquipements} equipements={<ul>{equipments.map((item, index) => <li key={index}>{item}</li>)}</ul>} />
             </section>
           </React.Fragment>
         ))}

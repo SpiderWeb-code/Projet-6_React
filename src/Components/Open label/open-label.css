@@ -71,6 +71,7 @@
 #container-label-info .ouverture-label{
     max-width: none;
     height: 50px;
+    max-width: 1170px;
 }
 
 #container-label-info h3{

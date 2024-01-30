@@ -1,8 +1,11 @@
 #container-section-image{
-    padding:30px 100px 0px 100px;
+    margin:30px 100px 0px 100px;
     display:flex;
     justify-content:center;
     align-items:center;
+    border-radius: 25px;
+    background-color: rgb(117, 117, 117);
+    position: relative;
 }
 
 #container-section-image h1{
@@ -19,6 +22,10 @@
     object-fit: cover;
     width: 100%;
     border-radius:25px;
+
+    width: 100%;
+    display: block;
+    mix-blend-mode: multiply;
 }
 
 #container-section-info{

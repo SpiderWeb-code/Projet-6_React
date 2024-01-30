@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from '../src/Pages/page-accueil';
-import ArticlePage from "./Pages/page-article";
-import ProposPage from "./Pages/page-a_propos";
+import Home from './Pages/Home';
+import ArticlePage from "./Pages/ArticlePage";
+import ProposPage from "./Pages/ProposPage";
 
 function App() {
   return (

@@ -25,7 +25,7 @@ function ArticlePage() {
   const filteredData = Data.filter((props) => props.id === paramsId);
 
   const handleSwitchLeft = () => {
-    setCoverIndex((prevIndex) => (prevIndex - 1 + filteredData.length) % filteredData[0]?.pictures?.length);
+    setCoverIndex((prevIndex) => (prevIndex - 1 + filteredData[0]?.pictures?.length) % filteredData[0]?.pictures?.length);
   };
 
   const handleSwitchRight = () => {

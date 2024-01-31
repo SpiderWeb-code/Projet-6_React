@@ -22,6 +22,8 @@ function ArticlePage() {
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter((props) => props.id === paramsId);
   const pictures = filteredData[0]?.pictures || [];
+  // Permet de calculer la valeur maximale de coverIndex à partir du tableau pictures
+  const maxCoverIndex = pictures.length - 1;
 
   const handleSwitch = (increment) => {
     setCoverIndex((prevIndex) => (prevIndex + increment + pictures.length) % pictures.length);
@@ -34,11 +36,12 @@ function ArticlePage() {
         <Nav />
       </header>
       <div className="container-article-2">
-        {/* Afficher les articles filtrés */}
         {filteredData.map(({ id, title, cover: articleCover, location, host, tags, rating, description, equipments }) => (
           <React.Fragment key={id}>
-            <Switch onClickLeft={() => handleSwitch(-1)} onClickRight={() => handleSwitch(1)} />
+
+            <Switch onClickLeft={() => handleSwitch(-1)} onClickRight={() => handleSwitch(1)} coverIndex={coverIndex} maxCoverIndex={maxCoverIndex}/>
             <Article cover={pictures[coverIndex] || articleCover || 'valeur_par_defaut_pour_cover'} />
+
             <section id="second-container">
               <Localisation title={title} location={location} tags={tags} />
               <div id="container-profil">
@@ -47,6 +50,7 @@ function ArticlePage() {
               </div>
             </section>
             <section id="container-labels">
+              {/* Ajouter une balise <li> pour afficher le résultat de coverIndex */}
               <OpenLabel label={titleLabelDescription} description={<p>{description}</p>} />
               <OpenLabel label={titleLabelEquipements} equipements={<ul>{equipments.map((item, index) => <li key={index}>{item}</li>)}</ul>} />
             </section>

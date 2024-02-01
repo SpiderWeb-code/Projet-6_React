@@ -71,3 +71,22 @@
 #header-not_found #link-without-bar_accueil{
     text-decoration: none;
 }
+
+@media (max-width:425px){
+    #navigation{
+        margin: 0;
+        width: 70%;
+    }
+    #navigation div{
+        width: 60px;
+        font-size: 10px;
+    }
+    #navigation p{
+        width: 100px;
+    }
+}
+@media (max-width:375px){
+    #navigation{
+        width: 60%;
+    }
+}

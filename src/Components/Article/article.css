@@ -48,3 +48,14 @@
     border-radius: 50px;
     margin: 50px 120px 0px 100px;
 }
+
+@media (max-width:425px){
+    .container-article{
+        margin: 0;
+        background-color: white;
+        gap: 30px;
+    }
+    .container-article img{
+        height: 300px;
+    }
+}

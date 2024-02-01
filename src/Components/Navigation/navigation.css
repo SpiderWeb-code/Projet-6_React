@@ -1,17 +1,73 @@
-#navigation{
+#navigation div{
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:350px;
 }
-#p-navigation{
-    text-decoration: underline
-}
-.nav-link{
+
+#navigation strong{
     font-size: 200%;
     font-weight: 100;
     color: black;
 }
-.link-without-bar{
+#navigation #link-without-bar_a_propos{
+    text-decoration: none;
+}
+#navigation #link-without-bar_accueil{
+    text-decoration: underline;
+}
+
+#header div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:350px;
+}
+#header strong{
+    font-size: 200%;
+    font-weight: 100;
+    color: black;
+}
+
+#header #link-without-bar_a_propos{
+    text-decoration: underline;
+}
+#header #link-without-bar_accueil{
+    text-decoration: none;
+}
+
+#header-article div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:350px;
+}
+#header-article strong{
+    font-size: 200%;
+    font-weight: 100;
+    color: black;
+}
+#header-article #link-without-bar_a_propos{
+    text-decoration: none;
+}
+#header-article #link-without-bar_accueil{
+    text-decoration: none;
+}
+
+#header-not_found div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:350px;
+}
+#header-not_found strong{
+    font-size: 200%;
+    font-weight: 100;
+    color: black;
+}
+#header-not_found #link-without-bar_a_propos{
+    text-decoration: none;
+}
+#header-not_found #link-without-bar_accueil{
     text-decoration: none;
 }

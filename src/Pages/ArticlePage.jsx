@@ -31,7 +31,7 @@ function ArticlePage() {
 
   return (
     <main id="main_page-article">
-      <header id="header">
+      <header id="header-article">
         <Logo />
         <Nav />
       </header>

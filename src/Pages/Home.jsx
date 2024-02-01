@@ -12,7 +12,7 @@ const filteredData = Data.filter(props => props.title);
 function Home() {
   return (
     <main>
-        <header>
+        <header id="navigation">
         <Logo />
         <Nav />
         </header>

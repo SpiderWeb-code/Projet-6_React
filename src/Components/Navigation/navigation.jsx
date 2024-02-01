@@ -9,12 +9,12 @@ function Nav(){
 
 //RENDER
 return(
-    <div id="navigation">
-        <Link to={"/"} className="link-without-bar">
-        <p id="p-navigation"><strong className="nav-link">Accueil</strong></p>
+    <div>
+        <Link to={"/"} id="link-without-bar_accueil">
+        <p><strong>Accueil</strong></p>
         </Link>
-        <Link to={"/information"} className="link-without-bar">
-        <p><strong className="nav-link">A Propos</strong></p>
+        <Link to={"/information"} id="link-without-bar_a_propos">
+        <p id="p-a_propos"><strong>A Propos</strong></p>
         </Link>
     </div>
 )

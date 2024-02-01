@@ -7,7 +7,7 @@ import Error404 from "../Components/Error404/error404";
 function NotFound(){
     return(
         <main>
-            <header>
+            <header id="header-not_found">
                 <Logo />
                 <Nav />
             </header>

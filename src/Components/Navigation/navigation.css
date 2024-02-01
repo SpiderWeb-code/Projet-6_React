@@ -2,15 +2,15 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:400px;
+    width:350px;
 }
 #p-navigation{
     text-decoration: underline
 }
 .nav-link{
-    font-size: 150%;
+    font-size: 200%;
     font-weight: 100;
-    color: red;
+    color: black;
 }
 .link-without-bar{
     text-decoration: none;

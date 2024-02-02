@@ -95,6 +95,17 @@
     #header-article p{
         width: 100px;
     }
+    #header{
+        margin: 0;
+        width: 70%;
+    }
+    #header div{
+        width: 60px;
+        font-size: 10px;
+    }
+    #header p{
+        width: 100px;
+    }
 }
 @media (max-width:375px){
     #navigation{

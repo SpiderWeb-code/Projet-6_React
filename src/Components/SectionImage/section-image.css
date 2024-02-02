@@ -50,4 +50,10 @@
     #container-section-image img{
         height: 200px;
     }
+    #container-section-info{
+        margin-bottom: 0px;
+    }
+    #container-section-info img{
+        height: 150px;
+    }
 }

@@ -91,11 +91,32 @@
 
 @media (max-width:425px){
     .active{
-        width: 100%;
+        width: 109%;
         height: 200px;
     }
     .not-active{
-        width: 100%;
+        width: 110%;
         height: 200px;
+    }
+    #container-label-info div{
+        height: 100%;
+        width: 90%;
+    }
+}
+@media (max-width:375px){
+    .active{
+        width: 50%;
+        height: 200px;
+    }
+    .not-active{
+        width: 50%;
+        height: 200px;
+    }
+    .ouverture-label{
+        width: 89%;
+    }
+    #container-label-info div{
+        height: 100%;
+        width: 88%;
     }
 }

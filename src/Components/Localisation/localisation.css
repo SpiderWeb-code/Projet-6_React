@@ -52,4 +52,16 @@
 
 .hidden {
     display: none;
-  }
+}
+
+@media (max-width:425px){
+    #first-container{
+        min-width: 80%;
+    }
+    #first-container h2{
+        font-size: 20px;
+    }
+    #first-container button{
+        font-size: 10px;
+    }
+}

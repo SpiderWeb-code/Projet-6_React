@@ -84,6 +84,17 @@
     #navigation p{
         width: 100px;
     }
+    #header-article{
+        margin: 0;
+        width: 70%;
+    }
+    #header-article div{
+        width: 60px;
+        font-size: 10px;
+    }
+    #header-article p{
+        width: 100px;
+    }
 }
 @media (max-width:375px){
     #navigation{

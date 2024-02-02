@@ -13,3 +13,17 @@
     color: gray;
     width: 20px;
 }
+
+@media (max-width:425px){
+    #container-rating{
+        gap: 5px;
+    }
+    .starOn{
+        color: red;
+        width: 15px;
+    }
+    .starOff{
+        color: gray;
+        width: 15px;
+    }
+}

@@ -6,10 +6,24 @@
 }
 #profil img{
     border-radius: 190px;
-    color: none;
 }
 
 #profil p{
     font-size: 20px;
     color: red;
+}
+
+@media (max-width:425px){
+    #container-profil{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #profil img{
+        width: 80px;
+    }
+    #profil p{
+        width: 70px;
+    }
 }

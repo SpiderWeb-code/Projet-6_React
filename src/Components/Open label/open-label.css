@@ -88,3 +88,14 @@
 #container-label-info p{
     margin: 15px;
 }
+
+@media (max-width:425px){
+    .active{
+        width: 100%;
+        height: 200px;
+    }
+    .not-active{
+        width: 100%;
+        height: 200px;
+    }
+}

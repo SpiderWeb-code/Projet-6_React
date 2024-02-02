@@ -29,3 +29,16 @@
     font-size: 30px;
     color: white;
 }
+@media (max-width:425px){
+    #switch-buttons{
+        margin: 0px;
+        height: 400px;
+        width: 95%;
+    }
+    #switch-buttons ul{
+        display: none;
+    }
+    .div-button{
+        height: 400px;
+    }
+}

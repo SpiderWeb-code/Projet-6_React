@@ -86,13 +86,11 @@
 
 @media (max-width:425px){
     #logo{
-        width: 150px;
+        width: 50px;
     }
-    #container-header{
-        width: 90%;
-    }
+    
     #container-link-header{
-        gap: 0px;
+        gap: 30px;
     }
     #navigation{
         margin: 0px;
@@ -100,15 +98,25 @@
     #navigation strong{
         font-size: 20px;
     }
+    #header{
+        margin: 0px;
+    }
     #header strong{
         font-size: 20px;
+    }
+    #container-link-header p{
+        width: 100%;
+    }
+    #container-header{
+        width: 100%;
+        padding: 0px 25px 0px 25px;
     }
 }
 @media (max-width:375px){
     #logo{
         min-width: 100px;
     }
-    #navigation{
-        width: 60%;
+    #container-link-header{
+        gap: 10px;
     }
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../Components/Logo/logo';
 import Nav from '../Components/Navigation/navigation';
 import Banner from '../Components/Banner/banner';
 import Article from '../Components/Article/article';
@@ -28,11 +27,10 @@ function ArticlePage() {
   const handleSwitch = (increment) => {
     setCoverIndex((prevIndex) => (prevIndex + increment + pictures.length) % pictures.length);
   };
-
+  console.log(filteredData)
   return (
     <main id="main_page-article">
       <header id="header-article">
-        <Logo />
         <Nav />
       </header>
       <div className="container-article-2">

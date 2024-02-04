@@ -9,7 +9,6 @@ function App() {
   //Si l'élément n'est pas reconnu "*", alors renvoie le lien "/not-found".
   //Si le lien est "/not-found", alors ouvre la page <NotFound />.
   return (
-    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +18,6 @@ function App() {
           <Route path="/not-found" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Banner from "../Components/Banner/banner";
 import Article from "../Components/Article/article";
-import Logo from "../Components/Logo/logo";
 import Nav from "../Components/Navigation/navigation";
 import Data from "../Components/Data/data.json";
 import SectionImage from "../Components/SectionImage/section-image";
@@ -13,7 +12,6 @@ function Home() {
   return (
     <main>
         <header id="navigation">
-        <Logo />
         <Nav />
         </header>
         <SectionImage image={SectionImageAccueil}/>

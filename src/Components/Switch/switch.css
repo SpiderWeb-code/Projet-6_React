@@ -33,12 +33,16 @@
     #switch-buttons{
         margin: 0px;
         height: 400px;
-        width: 95%;
+        width: 96%;
     }
     #switch-buttons ul{
         display: none;
     }
     .div-button{
         height: 400px;
+        padding: 0px 10px 0px 10px;
+    }
+    #switch-buttons img{
+        width: 30px;
     }
 }

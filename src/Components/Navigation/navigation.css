@@ -86,9 +86,11 @@
 
 @media (max-width:425px){
     #logo{
-        width: 50px;
+        width: 170px;
     }
-    
+    #header-article{
+        margin: 0;
+    }
     #container-link-header{
         gap: 30px;
     }
@@ -107,6 +109,9 @@
     #container-link-header p{
         width: 100%;
     }
+    #container-link-header strong{
+        font-size: 20px;
+    }
     #container-header{
         width: 100%;
         padding: 0px 25px 0px 25px;
@@ -114,7 +119,7 @@
 }
 @media (max-width:375px){
     #logo{
-        min-width: 100px;
+        width: 100px;
     }
     #container-link-header{
         gap: 10px;

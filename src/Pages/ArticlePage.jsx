@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../Components/Navigation/navigation';
 import Banner from '../Components/Banner/banner';
 import Article from '../Components/Article/article';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Data from '../Components/Data/data.json';
 import '../Components/Article/article.css';
 import Profil from '../Components/Profil/Profil';
@@ -17,13 +17,17 @@ function ArticlePage() {
 
   // Filtrer les éléments dans le tableau Data
   const [coverIndex, setCoverIndex] = useState(0);
-
   // Filtrer les éléments dans le tableau Data
   const filteredData = Data.filter((props) => props.id === paramsId);
   const pictures = filteredData[0]?.pictures || [];
+
+  //Renvoie sur la page Erreur-404 si j'ai pas déléments dans mon tableau = aucun éléments trouver avec cette id récupérer dans L'URL
+  if (filteredData.length === 0) {
+    return <Navigate to="not-found" />;
+  }
+
   // Permet de calculer la valeur maximale de coverIndex à partir du tableau pictures
   const maxCoverIndex = pictures.length - 1;
-
   const handleSwitch = (increment) => {
     setCoverIndex((prevIndex) => (prevIndex + increment + pictures.length) % pictures.length);
   };
@@ -36,10 +40,8 @@ function ArticlePage() {
       <div className="container-article-2">
         {filteredData.map(({ id, title, cover: articleCover, location, host, tags, rating, description, equipments }) => (
           <React.Fragment key={id}>
-
             <Switch onClickLeft={() => handleSwitch(-1)} onClickRight={() => handleSwitch(1)} coverIndex={coverIndex} maxCoverIndex={maxCoverIndex}/>
             <Article cover={pictures[coverIndex] || articleCover || 'valeur_par_defaut_pour_cover'} />
-
             <section id="second-container">
               <Localisation title={title} location={location} tags={tags} />
               <div id="container-profil">

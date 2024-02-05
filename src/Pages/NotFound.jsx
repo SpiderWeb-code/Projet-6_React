@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../Components/Navigation/navigation";
-import Banner from "../Components/Banner/banner";
+import Footer from "../Components/Footer/footer.jsx";
 import Error404 from "../Components/Error404/error404";
 
 function NotFound(){
@@ -12,7 +12,7 @@ function NotFound(){
             <section>
                 <Error404 />
             </section>
-            <Banner />
+            <Footer />
         </main>
     )
 }

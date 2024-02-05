@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../Components/Navigation/navigation";
-import Banner from "../Components/Banner/banner";
+import Footer from "../Components/Footer/footer.jsx";
 import SectionImage from "../Components/SectionImage/section-image";
 import SectionImagePropos from "../Components/Data/image-section-page-info.webp";
 import OpenLabel from "../Components/Open label/open-label";
@@ -22,7 +22,7 @@ function ProposPage(){
         </React.Fragment>
         ))}
       </section>
-      <Banner />
+      <Footer />
     </main>
     )
 }

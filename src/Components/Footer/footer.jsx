@@ -1,8 +1,8 @@
 import React from "react";
 import FooterImage from "../Data/Footer.webp";
 import FooterImageMobil from "../Data/Kasa-image-mobil-banner.webp"
-import "../Banner/banner.css";
-function Banner(){
+import "./footer.css";
+function Footer(){
     return(
     <div>
         <picture>
@@ -12,4 +12,4 @@ function Banner(){
     </div>
     )
 }
-export default Banner
+export default Footer

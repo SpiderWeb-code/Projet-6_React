@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Banner from "../Components/Banner/banner";
+import Footer from "../Components/Footer/footer.jsx";
 import Article from "../Components/Article/article";
 import Nav from "../Components/Navigation/navigation";
 import Data from "../Components/Data/data.json";
@@ -22,7 +22,7 @@ function Home() {
               </Link>
             ))}
           </section>
-        <Banner />
+        <Footer />
     </main>
   );
 }

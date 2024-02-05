@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Nav from '../Components/Navigation/navigation';
-import Banner from '../Components/Banner/banner';
+import Footer from '../Components/Footer/footer';
 import Article from '../Components/Article/article';
 import { Navigate, useParams } from 'react-router-dom';
 import Data from '../Components/Data/data.json';
@@ -57,7 +57,7 @@ function ArticlePage() {
           </React.Fragment>
         ))}
       </div>
-      <Banner />
+      <Footer />
     </main>
   );
 }

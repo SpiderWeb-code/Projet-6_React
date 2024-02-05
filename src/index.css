@@ -6,7 +6,7 @@ header{
     flex-wrap: nowrap;
 }
 body{
-    margin: 0px;
+    margin: 8px;
 }
 #main_page-article{
     display: flex;

@@ -6,7 +6,7 @@
     margin-top: 20px;
 }
 .starOn{
-    color: red;
+    color: #ff6060;
     width: 20px;
 }
 .starOff{
@@ -19,11 +19,9 @@
         gap: 5px;
     }
     .starOn{
-        color: red;
         width: 17px;
     }
     .starOff{
-        color: gray;
         width: 17px;
     }
 }

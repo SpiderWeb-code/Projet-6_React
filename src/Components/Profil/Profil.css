@@ -10,7 +10,7 @@
 
 #profil p{
     font-size: 20px;
-    color: red;
+    color: #ff6060;
 }
 
 @media (max-width:425px){

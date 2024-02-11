@@ -48,6 +48,11 @@
     border-radius: 50px;
     margin: 50px 120px 0px 100px;
 }
+@media (max-width:960px){
+    .container-article-2 #test{
+        margin: 50px 0px 0px 0px;
+    }
+}
 @media (max-width:425px){
     .container-article{
         margin: 0;

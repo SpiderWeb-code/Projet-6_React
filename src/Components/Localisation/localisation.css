@@ -52,7 +52,17 @@
 .hidden {
     display: none;
 }
-
+@media (max-width:960px){
+    #first-container{
+        padding: 0px;
+        min-width: 500px;
+    }
+}
+@media (max-width:508px){
+    #first-container{
+        min-width: 400px;
+    }
+}
 @media (max-width:425px){
     #first-container{
         min-width: 80%;

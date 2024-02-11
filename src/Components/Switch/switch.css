@@ -40,6 +40,8 @@
     color: white;
     list-style-type: none;
     font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 @media (max-width:1120px){
     #switch-buttons{
@@ -61,10 +63,6 @@
     }
     #container-ul-switch{
         height: 400px;
-    }
-    #container-ul-switch ul{
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .div-button{
         height: 400px;

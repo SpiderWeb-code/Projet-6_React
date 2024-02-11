@@ -12,7 +12,14 @@
     font-size: 20px;
     color: #ff6060;
 }
-
+@media (max-width:1228px){
+    #container-profil{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 98%;
+    }
+}
 @media (max-width:425px){
     #container-profil{
         display: flex;

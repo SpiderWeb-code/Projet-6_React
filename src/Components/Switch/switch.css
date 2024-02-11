@@ -11,9 +11,8 @@
     justify-content: space-between;
     height: 600px;
     width: 100%;
-    margin: 0px 120px 0px 100px;
+    margin: 0px 127px 0px 100px;
 }
-
 #switch-buttons img{
     width: 70px;
 }
@@ -42,14 +41,30 @@
     list-style-type: none;
     font-size: 30px;
 }
+@media (max-width:1120px){
+    #switch-buttons{
+        display: flex;
+        justify-content: space-between;
+        height: 600px;
+        width: 870px;
+        margin: 0px 35px 0px 0px;
+    }
+}
 @media (max-width:425px){
+    #container-switch-buttons{
+        margin: 0;
+    }
     #switch-buttons{
         margin: 0px;
         height: 400px;
         width: 96%;
     }
-    #switch-buttons ul{
-        display: none;
+    #container-ul-switch{
+        height: 400px;
+    }
+    #container-ul-switch ul{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .div-button{
         height: 400px;

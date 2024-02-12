@@ -114,8 +114,9 @@
     }
     #container-header{
         width: 100%;
-        padding: 0px 25px 0px 25px;
+        padding: 0px 20px 0px 20px;
     }
+    
 }
 @media (max-width:1152px){
     #logo{
@@ -148,11 +149,5 @@
     }
     #logo{
         width: 100px;
-    }
-}
-
-@media (max-width:425px){ 
-    #container-link-header{
-        gap: 10px;
     }
 }

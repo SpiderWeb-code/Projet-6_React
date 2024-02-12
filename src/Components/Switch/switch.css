@@ -53,6 +53,7 @@
 @media (max-width:425px){
     #container-switch-buttons{
         margin: 0;
+        width: 87vw;
     }
     #switch-buttons{
         margin: 0px;

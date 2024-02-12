@@ -37,6 +37,7 @@ function ArticlePage() {
       <header id="header-article">
         <Nav />
       </header>
+      <div className='top-of-the-page'>
       <div className="container-article-2">
         {filteredData.map(({ id, title, cover: articleCover, location, host, tags, rating, description, equipments }) => (
           <React.Fragment key={id}>
@@ -57,8 +58,9 @@ function ArticlePage() {
           </React.Fragment>
         ))}
       </div>
+      </div>
       <Footer />
-    </main>
+      </main>
   );
 }
 

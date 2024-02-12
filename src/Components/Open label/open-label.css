@@ -96,36 +96,49 @@
         margin: 0px 240px 0px 200px;
     }
     #container-label-info .active{
-        padding: 5px 20px 5px 20px;;
+        padding: 5px 20px 5px 20px;
     }
     #container-label-info .not-active{
-        padding: 0px 20px 0px 20px;;
+        padding: 0px 20px 0px 20px;
     }
 }
 @media (max-width:660px){
     .active{
-        width: 85vw;
+        width: 84vw;
         height: 200px;
     }
     .not-active{
-        width: 87vw;
+        width: 84vw;
         height: 200px;
     }
     #container-label-info{
         margin: 0px 20px 0px 20px;
     }
-    
-    #container-labels{
-        max-width: 90%;
-    }
     #container-label-info div{
         height: 100%;
         width: 90%;
     }
+    #container-labels .active{
+        max-width: 530px;
+    }
+    #container-labels{
+        margin: 40px 50px 0px 20px;
+    }
+    #container-labels .ouverture-label{
+        width: 100%;
+    }
+}
+@media (max-width:425px){
+    #container-labels{
+        margin: 40px 70px 0px 5px;
+    }
+    #container-labels .ouverture-label{
+        width: 75vw;
+    }
 }
 @media (max-width:375px){
     .active{
-        width: 99%;
+        width: 97%;
         height: 200px;
     }
     .not-active{
@@ -140,11 +153,16 @@
         width: 88%;
     }
     #container-labels{
+        margin: 40px 20px 0px 2px;
         max-width: 100%;
     }
 }
 @media (max-width:320px){
     .ouverture-label{
         width: 87%;
+    }
+    #container-labels{
+        margin: 40px 10px 0px 10px;
+        max-width: 100%;
     }
 }

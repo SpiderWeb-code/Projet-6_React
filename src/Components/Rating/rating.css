@@ -7,13 +7,20 @@
 }
 .starOn{
     color: #ff6060;
-    width: 20px;
+    width: 37px;
 }
 .starOff{
     color: gray;
-    width: 20px;
+    width: 37px;
 }
-
+@media (max-width:768px){
+    .starOn{
+        width: 20px;
+    }
+    .starOff{
+        width: 20px;
+    }
+}
 @media (max-width:425px){
     #container-rating{
         gap: 5px;

@@ -64,12 +64,13 @@
 @media (max-width:508px){
     #first-container{
         min-width: 400px;
+        height: 200px;
     }
 }
 @media (max-width:425px){
     #first-container{
         min-width: 80%;
-        height: 130px;
+        height: 150px;
     }
     #first-container h2{
         font-size: 20px;
@@ -78,5 +79,10 @@
         font-size: 10px;
         width: 30%;
         height: 30px;
+    }
+}
+@media (max-width:346px){
+    #first-container{
+        height: 170px;
     }
 }

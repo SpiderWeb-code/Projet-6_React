@@ -21,4 +21,9 @@
         object-fit: cover;
         margin-top: 5%;
     }
+    #banner strong{
+        width: 133px;
+        text-align: center;
+        margin-top: 20px;
+    }
 }

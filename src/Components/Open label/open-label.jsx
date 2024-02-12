@@ -19,7 +19,7 @@ function OpenLabel(props){
     }
 
     return(
-        <div id="container-description">
+        <div className="container-description">
             <div className="ouverture-label">
                 {label}
                 <img src={Arrow} alt="fléche ouverture et fermeture de la div" onClick={Activation} className={isRotated ? 'rotated' : 'no-rotated'}></img>

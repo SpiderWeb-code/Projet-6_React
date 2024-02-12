@@ -71,3 +71,8 @@
         width: 30px;
     }
 }
+@media (max-width:320px){
+    #container-switch-buttons{
+        width: 92%;
+    }
+}

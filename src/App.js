@@ -6,16 +6,13 @@ import ProposPage from "./Pages/ProposPage";
 import NotFound from "./Pages/NotFound";
 
 function App() {
-  //Si l'élément n'est pas reconnu "*", alors renvoie le lien "/not-found".
-  //Si le lien est "/not-found", alors ouvre la page <NotFound />.
   return (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/article/:id" element={<ArticlePage />} />
           <Route path="/information" element={<ProposPage />} />
-          <Route path="*" element={<Navigate to="/not-found" />} />
-          <Route path="/not-found" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
   );

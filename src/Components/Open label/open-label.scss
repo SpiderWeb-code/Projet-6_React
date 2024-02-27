@@ -1,3 +1,4 @@
+@import "../../mixin.scss";
 $transition-duration: 0.5s;
 $transition-timing-function: ease-in-out;
 
@@ -57,9 +58,7 @@ $transition-timing-function: ease-in-out;
 }
 
 #container-label-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include flex-align-direction;
   gap: 20px;
 
   .ouverture-label {

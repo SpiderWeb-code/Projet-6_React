@@ -1,4 +1,5 @@
 import React from "react";
+import "../Article/article.scss";
     function Article (props){
         //STATE
 

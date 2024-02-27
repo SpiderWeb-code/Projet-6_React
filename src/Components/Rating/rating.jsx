@@ -1,5 +1,5 @@
 import React from "react";
-import "../Rating/rating.css";
+import "../Rating/rating.scss";
 import StarOn from "../Data/star-solid.svg";
 import StarOff from "../Data/star-regular.svg";
 

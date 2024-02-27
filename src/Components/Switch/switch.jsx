@@ -1,5 +1,5 @@
 import React from "react";
-import "../Switch/switch.css"
+import "../Switch/switch.scss"
 import ArrowLeft from "../Data/angle-left-solid.svg";
 import ArrowRight from "../Data/angle-right-solid.svg";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../SectionImage/section-image.css";
+import "../SectionImage/section-image.scss";
 function SectionImage({image}){
 //STATE
 const altImageSection = "Image de la section";

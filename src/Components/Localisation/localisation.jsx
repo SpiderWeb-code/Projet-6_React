@@ -1,5 +1,5 @@
 import React from "react";
-import "../Localisation/localisation.css";
+import "../Localisation/localisation.scss";
 
 function Localisation(props) {
   // buttons = aux tags dans notre Data. et crée le parametre index pour compter nos tags

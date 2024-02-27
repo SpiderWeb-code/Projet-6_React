@@ -1,6 +1,6 @@
 import React from "react";
 import FooterImage from "../Data/logo-footer.webp";
-import "./footer.css";
+import "./footer.scss";
 function Footer(){
     return(
     <div id="banner">

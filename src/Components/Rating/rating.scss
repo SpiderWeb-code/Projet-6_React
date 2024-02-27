@@ -1,0 +1,33 @@
+#container-rating {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  
+    .starOn {
+      color: #ff6060;
+      width: 37px;
+    }
+  
+    .starOff {
+      color: gray;
+      width: 37px;
+    }
+  
+    @media (max-width: 768px) {
+      .starOn,
+      .starOff {
+        width: 20px;
+      }
+    }
+  
+    @media (max-width: 425px) {
+      gap: 5px;
+  
+      .starOn,
+      .starOff {
+        width: 17px;
+      }
+    }
+  }

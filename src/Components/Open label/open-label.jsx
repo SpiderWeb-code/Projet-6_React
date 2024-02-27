@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Open label/open-label.css";
+import "../Open label/open-label.scss";
 import Arrow from "../Data/chevron-up-solid.svg";
 export const titleLabelDescription = <h3>Description</h3>;
 export const titleLabelEquipements = <h3>Équipements</h3>;

@@ -4,7 +4,7 @@ import Footer from '../Components/Footer/footer';
 import Article from '../Components/Article/article';
 import { Navigate, useParams } from 'react-router-dom';
 import Data from '../Components/Data/data.json';
-import '../Components/Article/article.css';
+import '../Components/Article/article.scss';
 import Profil from '../Components/Profil/Profil';
 import Localisation from '../Components/Localisation/localisation';
 import Rating from '../Components/Rating/rating';
@@ -13,6 +13,7 @@ import { titleLabelDescription, titleLabelEquipements } from '../Components/Open
 import Switch from '../Components/Switch/switch';
 
 function ArticlePage() {
+  // Met en paramettre l'id
   const { id: paramsId } = useParams();
 
   // Filtrer les éléments dans le tableau Data
@@ -21,7 +22,7 @@ function ArticlePage() {
   const filteredData = Data.filter((props) => props.id === paramsId);
   const pictures = filteredData[0]?.pictures || [];
 
-  //Renvoie sur la page Erreur-404 si j'ai pas déléments dans mon tableau = aucun éléments trouver avec cette id récupérer dans L'URL
+  // Renvoie sur la page Erreur-404 si j'ai pas déléments dans mon tableau = aucun éléments trouver avec cette id récupérer dans L'URL
   if (filteredData.length === 0) {
     return <Navigate to="not-found" />;
   }
@@ -40,6 +41,7 @@ function ArticlePage() {
       <div className='top-of-the-page'>
       <div className="container-article-2">
         {filteredData.map(({ id, title, cover: articleCover, location, host, tags, rating, description, equipments }) => (
+          //Ket={id} permet a React de suivre le changements et de mettre a jours le DOM lors des modification des Articles en fonction de l'id de l'article
           <React.Fragment key={id}>
             <Switch onClickLeft={() => handleSwitch(-1)} onClickRight={() => handleSwitch(1)} coverIndex={coverIndex} maxCoverIndex={maxCoverIndex}/>
             <Article cover={pictures[coverIndex] || articleCover || 'valeur_par_defaut_pour_cover'} />

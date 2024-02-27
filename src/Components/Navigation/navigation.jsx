@@ -1,5 +1,5 @@
 import React from "react";
-import "../Navigation/navigation.css";
+import "../Navigation/navigation.scss";
 import { Link } from "react-router-dom";
 import logo from "../Data/logo.webp";
 

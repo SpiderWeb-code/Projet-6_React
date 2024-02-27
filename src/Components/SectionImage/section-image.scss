@@ -27,18 +27,23 @@
     display: block;
     mix-blend-mode: multiply;
   }
+  @media (max-width: 504px) {
+    h1{
+      font-size: 38px;
+    }
+  }
 
   @media (max-width: 425px) {
     margin: 5% 5% 5% 5%;
 
     h1 {
-      font-size: 35px;
+      font-size: 24px;
       margin: 0px 0px 0px 20px;
       padding-right: 70px;
     }
 
     img {
-      height: 200px;
+      height: 150px;
     }
   }
 }
@@ -53,7 +58,6 @@
   @media (max-width: 425px) {
     #container-section-info {
       margin-bottom: 0px;
-
       img {
         height: 150px;
       }

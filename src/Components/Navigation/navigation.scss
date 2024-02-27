@@ -158,6 +158,13 @@
       width: 145px;
     }
   }
+  @media (max-width: 389px) {
+    #container-link-header{
+    strong {
+      font-size: 17px;
+       }
+    }
+  }
   @media (max-width: 374px) {
     #container-link-header{
       gap: 10px;

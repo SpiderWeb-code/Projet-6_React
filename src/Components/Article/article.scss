@@ -33,7 +33,7 @@
         border-radius: 25px;
       }
     }
-  }
+}
   
   .container-article-2 {
     display: flex;
@@ -66,6 +66,30 @@
   
       img {
         height: 300px;
+      }
+  
+      #switch-button {
+        width: 95%;
+      }
+    }
+  
+    .container-article-2 #test {
+      margin: 0;
+      height: 400px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 425px) {
+    .container-article {
+      margin: 0;
+      background-color: white;
+      gap: 30px;
+  
+      img {
+        height: 300px;
+      }
+      #test{
+        height: 335px;
       }
   
       #switch-button {

@@ -140,20 +140,6 @@
   }
   
   @media (max-width: 768px) {
-    #logo {
-      width: 110px;
-    }
-  
-    #container-link-header {
-      gap: 50px;
-    }
-  
-    #container-link-header strong {
-      font-size: 25px;
-    }
-  }
-  
-  @media (max-width: 768px) {
     #container-link-header {
       gap: 20px;
     }
@@ -170,5 +156,13 @@
   @media (max-width: 425px) {
     #logo {
       width: 145px;
+    }
+  }
+  @media (max-width: 374px) {
+    #container-link-header{
+      gap: 10px;
+       strong {
+      font-size: 12px;
+       }
     }
   }

@@ -21,6 +21,13 @@ header {
     justify-content: space-between;
     margin: 20px 120px 0px 100px;
     flex-wrap: wrap;
+
+    @media (max-width: 1228px) {
+      margin: 20px 120px 0px 100px;
+  }
+  @media (max-width: 600px) {
+    margin: 20px 0px 0px 0px;
+}
   }
   
   #container-labels {
@@ -28,26 +35,12 @@ header {
     justify-content: space-between;
     margin: 20px 120px 0px 100px;
     flex-wrap: wrap;
-  }
-  
-  @media (max-width: 1228px) {
-    #second-container {
-      margin: 20px 120px 0px 100px;
+    @media (max-width: 1312px) {
+        display: flex;
+        justify-content: center;
     }
   }
   
-  @media (max-width: 1312px) {
-    #container-labels {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    #second-container {
-      margin: 20px 0px 0px 0px;
-    }
-  }
   
   @media (max-width: 425px) {
     .top-of-the-page {
